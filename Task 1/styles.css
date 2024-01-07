@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 35px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header {
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 7% 30%;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-bottom: 30px;
+}
+
+/* main  */
+
+main {
+  text-align: center;
+  padding: 0 25%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) 1fr;
+  padding: 5% 0 7%;
+  column-gap: 80px;
+}
+
+.content {
+  padding-right: 45%;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-computer {
+  margin-left: -25px;
+}
+
+/* Features */
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 7%;
+  column-gap: 50px;
+}
+
+.icon {
+  height: 32px;
+}
+
+/* Press  */
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3% 3% 7%;
+  justify-items: center;
+}
+
+#cta {
+  padding: 0 25% 10%;
+}
+
+/* buttons */
+
+.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+/* footer  */
+
+footer {
+  background-color: hsl(197, 20%, 93%);
+  padding: 2% 5%;
+}
+
+footer p:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  margin-right: 0;
+}
+
+footer div {
+  margin-right: 80px;
+  text-align: left;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 80px;
+}
+
+.social {
+  float: right;
+  margin: 0;
+  position: relative;
+  bottom: 60px;
+}
+
+.fa-brands {
+  margin-left: 20px;
+}
+
+.fa-brands:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    padding: 50px 30px;
+  }
+
+  button {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  main {
+    padding: 0 40px;
+  }
+
+  .grid-container {
+    display: block;
+    text-align: center;
+  }
+
+  .img-computer {
+    max-width: 80%;
+    margin-left: 0;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px 35px 80px;
+  }
+
+  .device {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 50px 10px;
+  }
+
+  .grid-container-3 {
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+  }
+
+  #cta {
+    padding: 80px 43px;
+    text-align: center;
+  }
+
+  .flex {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  footer div {
+    margin: 0;
+    text-align: center;
+  }
+
+  .social {
+    display: block;
+    float: unset;
+    bottom: 0;
+    margin-top: 50px;
+  }
+
+  .fa-brands {
+    margin: 0 20px;
+  }
+}
